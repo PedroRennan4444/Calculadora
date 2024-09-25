@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Legal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="top">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="main">
+            <input onclick="num(this)" type="button" value=1>
+            <input onclick="num(this)" type="button" value=2>
+            <input onclick="num(this)" type="button" value=3>
+            <br>
+            <input onclick="num(this)" type="button" value=4>
+            <input onclick="num(this)" type="button" value=5>
+            <input onclick="num(this)" type="button" value=6>
+            <br>
+            <input onclick="num(this)" type="button" value=7>
+            <input onclick="num(this)" type="button" value=8>
+            <input onclick="num(this)" type="button" value=9>
+            <br>
+            <input onclick="num(this)" type="button" value=0>
+        </div>
+        <div class="op">
+            <input onclick="op(this)" type="button" id="Adição" name="Operadores" value="+">
+            <input onclick="op(this)" type="button" id="Subtração" name="Operadores" value="-">
+            <input onclick="op(this)" type="button" id="Multiplicação" name="Operadores" value="*">
+            <input onclick="op(this)" type="button" id="Divisão" name="Operadores" value="/">
+        </div>
+        <button onclick="result()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
